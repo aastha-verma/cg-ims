@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/aspectjrt-1.8.9.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/aspectjweaver-1.8.9.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-aop-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-aspects-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-beans-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-build-src-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-context-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-context-support-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-core-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-expression-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-framework-bom-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-instrument-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-instrument-tomcat-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-jdbc-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-orm-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-oxm-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-test-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-tx-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-web-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Users/aaverma/Desktop/JAVA/spring JARS/spring-webmvc-4.0.2.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
