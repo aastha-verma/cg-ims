@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	
+	<bean id="es" class="cg.ims.spring.ExchangeServiceImpl">
+		<property name="exchangeRates">
+			<map>
+				<entry key="INR" value="71.20"/>
+				<entry key="PKR" value="124.50"/>
+				<entry key="JPY" value="3.10"/>
+				<entry key="SGD" value="1.60"/>
+			</map>
+		</property>
+	</bean>
+	
+	
+	<bean id="converter" class="cg.ims.spring.CurrencyConverterImpl">
+		<constructor-arg>
+			<ref bean="es"/>
+		</constructor-arg>
+	</bean>
+	
+	
+</beans>
