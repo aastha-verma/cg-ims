@@ -1,2 +1,2 @@
 # cg-ims
-Java code snippets from 10 Day Java Essential Training at CG
+Java code snippets for practice
