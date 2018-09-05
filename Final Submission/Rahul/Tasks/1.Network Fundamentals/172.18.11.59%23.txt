@@ -1,0 +1,46 @@
+172.18.11.59/23
+
+
+       172.18.11.59 => 10101100.00010010.00001 011.00111011
+/23 => 255.255.254.0=> 11111111.11111111.11111 110.00000000
+
+10101100.00010010.00001011.00111011
+11111111.11111111.11111110.00000000
+
+Network Address:
+
+10101100.00010010.00001 011.00000000 => 172.18.24.0 
+
+23 - 16(Class B) => 7 bits are borrowed from host portion
+
+Number of Subnets possible => 2^7 => 128
+
+Number of host bits remaining available => 16(default) - 7(subnetbits) => 9 bits
+
+Number of Hosts possbile in each subnet => (2^9)-2 => 512-2 => 510
+
+Firt Host Address => 10101100.00010010.00001 011.00000001=> 172.18.24.1
+
+Last Host Address => 10101100.00010010.11111 111.11111111 => 172.18.31.254
+
+Previous Subnet Address:
+
+10101100.00010010.00001 010.00000000 => 172.18.10.0
+
+Next Subnet Address:
+
+10101100.00010010.00001 100.00000000 => 172.18.12.0
+
+
+Broadcast Address:
+
+10101100.00010010.00011 111.11111111 => 172.18.31.255
+
+Previous IP Address to the current host(IP) address:
+
+10101100.00010010.00001 011.00111010 => 172.18.11.58
+
+
+Next IP Address to the current host(IP) address:
+10101100.00010010.00001 011.00111100 => 172.18.11.197
+

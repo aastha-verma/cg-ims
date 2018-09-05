@@ -1,0 +1,44 @@
+192.168.27.40/30
+
+
+       192.168.27.40  => 11000000.10101000.00011011.00101000
+/30 => 255.255.255.252=> 11111111.11111111.11111111.11111100
+
+
+11000000.10101000.00011011.001010 00
+11111111.11111111.11111111.111111 00
+
+Network Address:
+
+11000000.10101000.00011011.001010 00=>192.168.27.40
+30 - 24(Class C) => 6 bits are borrowed from host portion
+
+Number of Subnets possible => 2^6 => 64
+
+Number of host bits remaining available => 8(default) - 6(subnetbits) => 2 bits
+
+Number of Hosts possbile in each subnet => (2^2)-2 => 4-2 => 2
+
+Firt Host Address => 11000000.10101000.00011011.001010 01 => 192.168.27.41
+Last Host Address => 11000000.10101000.00011011.001010 10 => 192.168.27.42
+
+Previous Subnet Address:
+
+11000000.10101000.00011011.001001 11 => 192.168.27.39
+
+Next Subnet Address:
+
+11000000.10101000.00011011.001 01001 => 192.168.27.41
+
+
+Broadcast Address:
+11000000.10101000.00011011.001010 11 => 192.168.27.43
+
+Previous IP Address to the current host(IP) address:
+
+11000000.10101000.00011011.00100111 => 192.168.27.39
+
+
+Next IP Address to the current host(IP) address:
+11000000.10101000.00011011.00101001 => 192.168.27.41
+

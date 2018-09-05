@@ -1,0 +1,53 @@
+
+
+192.168.59.48/29
+
+
+               192.168.59.48 = 11000000.10101000.00111011.00110000
+        /29= 255.255.255.248 = 11111111.11111111.11111111.11111000
+
+
+11000000.10101000.00111011.00110 000
+11111111.11111111.11111111.11111 000
+
+
+
+Network Address:
+11000000.10101000.00111011.00110 000=  192.168.59.48 
+
+
+
+
+29 - 24(Class c) => 5 bits are borrowed from host portion
+
+Number of Subnets possible => 2^5 => 32
+
+Number of host bits remaining available => 8(default) - 5(subnetbits) => 3bits
+
+Number of Hosts possbile in each subnet => (2^3)-2 => 8-2=> 6
+
+Firt Host Address =>11000000.10101000.00111011.00110 001=>192.168.59.49
+
+Last Host Address => 11000000.10101000.00111011.00110 110=> 192.168.59.54
+
+Previous Subnet Address:
+11000000.10101000.00111011.00101 000 => 192.168.59.40
+
+Next Subnet Address:
+
+11000000.10101000.00111011.00111 000 => 192.168.59.56
+
+
+Broadcast Address:
+
+11000000.10101000.00111011.00110 111=> 192.168.59.55
+
+Previous IP Address to the current host(IP) address:
+11000000.10101000.00111011.00101111=> 192.168.59.47
+
+
+Next IP Address to the current host(IP) address:
+10101100.00010011.00010011.00110001 => 192.168.59.49
+
+
+

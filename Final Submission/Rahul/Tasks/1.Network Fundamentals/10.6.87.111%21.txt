@@ -1,0 +1,49 @@
+2) 10.6.87.111/21
+
+
+       10.6.87.111   => 00001010.00000110.01000111.01101111
+/21 => 255.255.248.0 => 11111111.11111111.11111000.00000000
+
+
+
+00001010.00000110.01000111.01101111
+11111111.11111111.11111000.00000000
+
+Network Address:
+
+00001010.00000110.01000 000.00000000 => 10.6.64.0 
+
+21 - 8(Class A) => 13 bits are borrowed from host portion
+
+Number of Subnets possible => 2^13 => 8192
+
+Number of host bits remaining available => 24(default) - 13(subnetbits) => 11 bits
+
+Number of Hosts possbile in each subnet => (2^11)-2 => 2048-2 => 2046
+
+Firt Host Address => 00001010.00000000.00000000.00000001 => 10.0.0.1
+
+Last Host Address => 00001010.00000000.11111110.11111111 => 10.0.254.255
+
+Previous Subnet Address:
+
+00001010.00000110.00111111.01101111 => 10.6.63.0
+
+Next Subnet Address:
+
+00001010.00000110.01000 001.00000000 => 10.6.65.0
+
+
+Broadcast Address:
+
+00001010.00000110.01000 111.11111111 => 10.6.71.255
+
+Previous IP Address to the current host(IP) address:
+
+00001010.00000110.01000111.01101110 => 10.6.87.110
+
+
+Next IP Address to the current host(IP) address:
+
+00001010.00000110.01000111.01110000 => 10.6.87.112
+

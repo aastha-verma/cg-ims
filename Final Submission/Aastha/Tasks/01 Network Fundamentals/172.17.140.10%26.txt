@@ -1,0 +1,45 @@
+IP = 172.(empID%31).(empID%177).(empID%127)/(empID%29)
+
+empID = 152537
+152537%24 = 17
+152537%32 = 140
+152537%233 = 10
+152537%29 = 26
+
+Taking n = 0,
+CIDR = 26
+IP = 172.17.140.10/26 
+172.17.140.10 = 10101100.00010001.10001100.00001010
+
+Subnetted Subnet = 11111111.11111111.11111111.11000000 - 255.255.255.192
+Default Subnet = 255.255.0.0
+
+Our IP Address     -     10101100.00010001.10001100.00001010
+Subnetted Subnet   -     11111111.11111111.11111111.11000000
+                         -----------------------------------
+Network IP         -     10101100.00010001.10001100.00000000 = 172.17.140.0				 
+
+
+1. No. of subnet Bits taken for subnetting = 26 - 16(Class B)= 10
+
+2. No. of subnetworks possible = 2^10 = 1024
+
+3. No. of host bits remaining = 16(Default) - 10(Subnet bits) = 6
+
+4. No. of hosts possible available = 2^6 - 2 = 64 - 2 = 62 
+
+5. First Host Address = 10101100.00010001.10001100.00000000 + 1 = 172.17.140.1
+
+6. Last Host Address = 10101100.00010001.00011001.00111111 - 1 = 172.17.140.62
+
+7. NW Address of this IP Address = 172.17.140.0
+
+8. Previous Subnet Address = 10101100.00010001.10001011.11000000 = 172.17.139.192
+
+9. Next Subnet Address = 10101100.00010001.10001100.01000000 = 172.17.140.64
+
+10. Broadcast Address of this IP Address = 10101100.00010001.00011001.10111111 = 172.17.140.63
+
+11. Previous IP Address to this IP Address = 172.17.140.9
+
+12. Next IP Address to this IP Address = 172.17.140.11

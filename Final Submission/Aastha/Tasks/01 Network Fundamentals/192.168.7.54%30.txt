@@ -1,0 +1,44 @@
+IP = 192.168.(empID%70).(empID%32)+29/(empID%27)
+
+empID = 152537
+152537%70 = 7
+152537%32 = 25 => 25+29 => 54
+152537%27 = 14
+
+Taking n = 1,
+CIDR = 26 + 1*4 = 30
+IP = 192.168.7.54/30 
+192.168.7.54 = 11000000.10101000.00000111.00110110
+
+Subnetted Subnet = 11111111.11111111.11111111.11111100 - 255.255.255.252
+Default Subnet = 255.255.255.0
+
+Our IP Address     -     11000000.10101000.00000111.00110110
+Subnetted Subnet   -     11111111.11111111.11111111.11111100
+                         -----------------------------------
+Network IP         -     11000000.10101000.00000111.00110100 = 192.168.7.52		 
+
+
+1. No. of subnet Bits taken for subnetting = 30 - 24(Class C)= 6
+
+2. No. of subnetworks possible = 2^6 = 64
+
+3. No. of host bits remaining = 8(Default) - 6(Subnet bits) = 2
+
+4. No. of hosts possible available = 2^2 - 2 = 4 - 2 = 2 
+
+5. First Host Address = 10101100.00010001.10001100.00000000 + 1 = 192.168.7.53	
+
+6. Last Host Address = 11000000.10101000.00000111.00111111 - 1 = 192.168.7.54
+
+7. NW Address of this IP Address = 192.168.7.52		
+
+8. Previous Subnet Address = 11000000.10101000.00000111.00110000 = 192.168.6.48
+
+9. Next Subnet Address = 11000000.10101000.00000111.00111000 = 192.168.7.56
+
+10. Broadcast Address of this IP Address = 11000000.10101000.00000111.00110111 = 192.168.7.55
+
+11. Previous IP Address to this IP Address = 192.168.7.41
+
+12. Next IP Address to this IP Address = 192.168.7.43

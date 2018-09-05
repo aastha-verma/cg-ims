@@ -1,0 +1,31 @@
+1) 10.65.100.3/21
+   
+      10.65.100.3 => 00001010.01000001.011 00100.00000011
+
+/21 255.255.248.0 => 11111111.11111111.111 11000.00000000
+   
+
+
+ network address =>00001010.01000001.01100000.00000000 =>10.65.96.0
+
+No of subnet borrowed = 21-8(class A) =13 bits
+
+Number of subnets possible =2^13=8192
+
+No. of Host bits Remaining= 24(default)-13(subnets) =11 
+
+Number of hosts possible in each subnet = (2^11)-2=2048-2=2046
+
+First Host address of the subnet =>00001010.01000001.01100000.00000001  =>10.65.96.1
+
+Last Host address of the subnet => 00001010.01000001.011 11111.11111110 =>10.65.127.255
+
+previous Subnet address => 00001010.01000001.010 00000.00000000 => 10.65.64.0
+
+next subnet Address => 00001010.01000001.100 00000.00000000 => 10.65.128.0
+
+Boardcast Address =>  00001010.01000001.011 11111.11111111 =>10.65.127.255
+
+Previous Ip address => 00001010.01000001.011 00100.00000010 =>10.65.100.2
+
+Next IP address => 00001010.01000001.011 00100.00000100 => 10.65.100.4 

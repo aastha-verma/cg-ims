@@ -1,0 +1,49 @@
+10.31.85.44/23
+
+
+               10.31.85.44 = 00001010.00011111.01010101.00101100 
+        /23= 255.255.254.0 = 11111111.11111111.11111110.00000000
+
+00001010.00011111.0101010 1.00101100
+11111111.11111111.1111111 0.00000000
+
+Network Address:
+ 00001010.00011111.0101010 0.00000000=10.31.84.0
+
+
+
+
+23 - 8(Class A) => 15 bits are borrowed from host portion
+
+Number of Subnets possible => 2^15 => 32768
+
+Number of host bits remaining available => 24(default) - 15(subnetbits) => 9 bits
+
+Number of Hosts possbile in each subnet => (2^9)-2 => 512-2 => 510
+
+Firt Host Address => 00001010.00011111.0101010 0.00000001=>10.31.84.1 
+
+Last Host Address => 00001010.00011111.0101010 1.11111110 => 10.31.85.254
+
+Previous Subnet Address:
+ 00001010.00011111.0101001 0.00000000 => 10.31.82.0
+
+Next Subnet Address:
+
+ 00001010.00011111.0101011 0.00000000=> 10.31.86.0
+
+
+Broadcast Address:
+
+00001010.00011111.0101010 1.11111111=> 10.31.85.255
+
+Previous IP Address to the current host(IP) address:
+00001010.00011111.01010101.00101011 => 10.31.85.43
+
+
+Next IP Address to the current host(IP) address:
+00001010.00011111.01010101.00101101 => 10.31.85.45
+ 
+
+
+
